@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    url: r2dbc:pool:mysql://localhost:3306/kotlin_r2dbc
+    username: root
+    password: 22380476
+
+  application:
+    name: kotlin-r2dbc
