@@ -10,8 +10,8 @@ class PostService(
     private val postRepository: PostRepository,
 ) {
 
-    suspend fun createPost(title: String, content: String) {
-        postRepository.save(Post(title = title, content = content))
+    suspend fun createPost(title: String, content: String): Post {
+        return postRepository.save(Post(title = title, content = content))
     }
 
     suspend fun getPosts(): List<Post> {
