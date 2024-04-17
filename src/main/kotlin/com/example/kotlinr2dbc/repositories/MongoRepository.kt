@@ -18,4 +18,7 @@ class MongoRepository {
             .toList()
     }
 
+    suspend fun insertOne(restaurant: Restaurant) {
+        collection.insertOne(restaurant)
+    }
 }
